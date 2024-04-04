@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background: url(https://i.pinimg.com/736x/db/0c/77/db0c77f9c7a00f087bf9025aa8927b8a.jpg); */
+    /* background: url(https://64.media.tumblr.com/aed80c1e7529fd0e83eaeea1ca20afda/tumblr_oy3svdknDG1u8iy6wo1_640.jpg); */
+    background: url(https://media.newyorker.com/photos/64889828ef09d4a0e04c759c/master/pass/Bert-Spider-Verse.jpg);
+    background-size:  cover;
+    overflow: hidden;
+}
+
+.calculator{
+    padding: 20px;
+    border: 2px solid #000;
+    border-radius: 16px;
+    box-shadow: opx 3px 15px rgba(0,0,0,0.8);
+    background: rgba(0,0,0,0.8);
+    z-index: 2;
+    position: absolute;
+}
+
+input{
+    width: 320px;
+    padding: 24px;
+    margin: 10px;
+    background: rgb(225,225,225,0.3);
+    box-shadow: inset 0px 0px 8px rgbs(0,0,0,0.4);
+    font-size: 65px;
+    text-align: right;
+    color: #fff;
+    border: solid 2px rgba(0,0,0,0.3);
+    border-radius: 16px;
+    text-shadow: 0px 1px 5px rgba(0,0,0,0.2);
+}
+
+input::placeholder{
+    color: #fff;
+}
+
+button{
+    width: 60px;
+    height: 60px;
+    margin: 10px;
+    color: #fff;
+    background: rgba(0,0,0,0.7);
+    font-size: 24px;
+    cursor: pointer;
+    border: solid 1px rgba(225,225,225,0.2);
+    border-radius: 25px;
+    text-shadow: 0px 1px 5px rgba(0,0,0,0.2);
+    box-shadow: -1px 2px 10px rgba(0,0,0,0.5);
+
+}
+
+.DEL, .AC{
+    font-size: 18px;
+}
+
+button:hover{
+    color: #fff;
+    background:rgb(231, 97, 97);
+}
+
+.equalBtn{
+    background: red;
+}
+
+.operator{
+    color: red;
+}
+
+.spider {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background-color: black;
+    border-radius: 50%;
+    animation: drop 4s linear infinite;
+  }
+
+  .eye {
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+  }
+
+  .leg {
+    position: absolute;
+    width: 2px;
+    height: 20px;
+    background-color: black;
+    transform-origin: top center;
+  }
+
+  @keyframes drop {
+    0% { top: -50px; }
+    100% { top: 100vh; }
+  }
